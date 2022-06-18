@@ -2,11 +2,13 @@ import React from "react"
 
 
 class Birds extends React.Component {
+    //pushes name to order, then calls handleAdope to update App.state
     handleSubmit = (event) => {
         event.preventDefault();
-        let {name} = event.target;
+        let {name} = event.target; //should I get this from props?
         const { order, handleAdopt } = this.props
-        order.push(name.value);
+        //order.push(name.value);
+        order.unshift(name.value);
         handleAdopt(order);
         //console.log(`handlSubmit: ${order}`)
     }
