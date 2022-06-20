@@ -34,7 +34,7 @@ class Checkout extends React.Component{
     render(){
         return (
            <>
-            <h3>Checkout</h3>
+            <h2>Checkout</h2>
             <form onSubmit={this.handleSubmit}>
                 <label for="fname">First Name:</label>
                 <input type="text" name="fname" value={this.fname} onChange={this.handleTextInput}/>

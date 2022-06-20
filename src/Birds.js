@@ -13,15 +13,16 @@ class Birds extends React.Component {
     render() {
         const { name, img, amount, handleAdopt } = this.props        
         return(
-            <>
-                <li>name: {name}</li>
-                <li><img src={img} width='250'></img></li>
-                <li>price: {amount}</li>   
+            <div class = "birdCard">
+                
+                <b>{name}</b>
+                <img src={img} width='125'></img>
+                <h4>price: ${amount}</h4>   
                 <form onSubmit={this.handleSubmit}>
                     <input type="hidden" name="name" value={name}/>
                     <input type="submit" value="Adopt" />
                 </form>
-            </>
+            </div>
         )
     }
 }

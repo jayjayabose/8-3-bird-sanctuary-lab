@@ -2,6 +2,8 @@ import React from "react";
 import BirdList from "./BirdList";
 import Cart from "./Cart"
 import Checkout from "./Checkout";
+import './App.css'; 
+
 /**
  * END NOTE: all user stories satisfied; tests fail, perhaps b/c component naming  
  * bonus logic is working, now write the correct output
@@ -34,19 +36,22 @@ class App extends React.Component {
   }
 
   render(){
-    return (
-      <div>
-        <h1>App</h1>    
-        <Cart
-          order = {this.state.order}
-        />
-        <Checkout
-          handleCheckout = {this.handleCheckout}
-        />
-        <BirdList
-          handleAdopt = {this.handleAdopt}
-          order = {this.state.order}
-        />
+    return (      
+      <div class = 'app'>
+        <div class = "leftRail">
+          <Cart
+            order = {this.state.order}
+          />
+          <Checkout
+            handleCheckout = {this.handleCheckout}
+          />
+        </div>
+        <div class="main">
+          <BirdList
+            handleAdopt = {this.handleAdopt}
+            order = {this.state.order}
+          />
+        </div>
       </div>
     );
   }

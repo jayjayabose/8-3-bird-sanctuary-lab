@@ -29,14 +29,12 @@ class Bonus extends React.Component {
         if (bonusLevel === 0){
             return (
                     <>
-                    <h3>Bonus</h3>
                     <p>Your donation has qualified you for the following items:</p>
                     </>
                 )
         }else{
             return (
                 <>
-                <h3>Bonus</h3>
                 <p>Your donation has qualified you for the following items:</p>
                 <ul>
                     {bonusList}

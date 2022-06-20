@@ -17,7 +17,7 @@ class Cart extends React.Component {
 
         return (
             <>
-                <h3>Cart</h3>                
+                <h2>Cart</h2>                
                 <h4>Discount: {discount}%</h4>
                 <h4>Total: ${total}</h4>                
                 <ol>{birdListItems}</ol>      

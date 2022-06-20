@@ -1,0 +1,33 @@
+.app {  
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.leftRail {  
+    grid-column: 2 / 3;
+}
+
+.main {  
+    grid-column: 3 / 7;
+}
+
+.birdList {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.birdCard {    
+    text-align: center;
+    background-color:lightcyan;
+    box-shadow: 1px 2px 2px gray;
+}
+
+html {
+    font-size: 10px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}  

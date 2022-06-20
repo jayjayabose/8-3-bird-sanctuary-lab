@@ -1,15 +1,6 @@
-/**
- * DIRECTION: https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/react/props_and_component_structure
- * follow the ProductPage.js model; function calling an object
-
- * 
- */
-
 import birdData from "./data/birds";
 import Birds from "./Birds";
-
-
-
+import './App.css'; 
 
 
 const BirdList = (props) => {
@@ -31,11 +22,8 @@ const BirdList = (props) => {
 
 
     return (
-      <div>
-        <h2>BirdList</h2>      
-            <ul>
-                {birds}
-            </ul>
+      <div class="birdList">
+        {birds}
       </div>
     );
   };
